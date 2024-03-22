@@ -14,4 +14,6 @@ Untuk meghandle dua response yang berbeda, kita bisa melakukan pemeriksaan apaka
 
 Refactoring perlu dilakukan agar tidak terjadi duplikasi kode. Sebelum dilakukan refactoring, program pada blok if-else hanya memiliki perbedaan pada `status_line` dan `filename`. Selebihnya, kedua blok sama-sama melakukan pembacaan file html dan menulis konten pada file html tsb ke stream. Untuk itu, perlu dilakukan refactroing dengan membuat blok if-else hanya untuk meng-assign value status_line dan filename.
 
+**Commit 4 Reflection Notes**
 
+Ketika user mengakses halaman http://127.0.0.1:7878/sleep terdapat delay sekitar 10 detik karena pada kode program telah disetel thread sleep yang akan menghentikan thread sementara. Sedangkan ketika saya mengakses http://127.0.0.1:7878 pada browser, aplikasi memberikan respon tanpa delay (tidak ada pemberian thread sleep).
