@@ -17,3 +17,9 @@ Refactoring perlu dilakukan agar tidak terjadi duplikasi kode. Sebelum dilakukan
 **Commit 4 Reflection Notes**
 
 Ketika user mengakses halaman http://127.0.0.1:7878/sleep terdapat delay sekitar 10 detik karena pada kode program telah disetel thread sleep yang akan menghentikan thread sementara. Sedangkan ketika saya mengakses http://127.0.0.1:7878 pada browser, aplikasi memberikan respon tanpa delay (tidak ada pemberian thread sleep).
+
+**Commit 5 Reflection Notes**
+
+ThreadPool adalah kumpulan dari beberapa thread yang telah dipersiapkan dan siap digunakan untuk mengeksekusi tugas-tugas yang diberikan kepadanya. Thread dalam ThreadPool dapat digunakan kembali untuk menangani berbagai tugas secara bersamaan (concurrent), menghindari overhead pembuatan thread baru setiap kali sebuah tugas masuk. 
+
+ThreadPool bekerja dengan cara mengelola antrian tugas (task queue) dan menugaskan tugas-tugas tersebut kepada thread yang tersedia dalam pool. Ketika suatu tugas selesai dieksekusi, thread akan kembali ke pool untuk digunakan kembali untuk tugas berikutnya. Dengan demikian, ThreadPool membantu mengoptimalkan penggunaan sumber daya sistem dan meningkatkan efisiensi dalam menangani banyak tugas secara bersamaan.
